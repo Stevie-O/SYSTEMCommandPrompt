@@ -71,6 +71,7 @@ namespace SYSTEMCommandPrompt
             if (ex != null)
                 MessageBox.Show(this, ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             btnOpenCommandPromptSYSTEM.Enabled = true;
+            txtOutput.AppendText("Done!\r\n");
             if (closeRequested)
                 this.Close();
         }
